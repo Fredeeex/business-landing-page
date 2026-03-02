@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Smart business landing page template (HTML/CSS/JS)"/>
+  <title>NovaWorks — Business Landing</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top Progress (scroll indicator) -->
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="NovaWorks Home">
+        <!-- inline logo (no assets) -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        <span>NovaWorks</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span class="sr-only">Toggle menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <a class="nav__link" href="#services">Services</a>
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn btn--small" href="#contact">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="badge">UK-ready • Responsive • Fast</p>
+          <h1 class="hero__title">
+            Build a modern website that
+            <span class="grad">converts visitors</span>
+            into customers.
+          </h1>
+          <p class="hero__text">
+            A clean, lightweight landing page template for local businesses, agencies, and startups.
+            Optimized for speed, accessibility, and real-world freelance delivery.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#contact">Start a Project</a>
+            <a class="btn btn--ghost" href="#work">See Examples</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Key stats">
+            <div class="stat">
+              <span class="stat__num">2–5</span>
+              <span class="stat__label">Days delivery</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">95+</span>
+              <span class="stat__label">Performance score</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">100%</span>
+              <span class="stat__label">Mobile-first</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock__body">
+              <div class="mock__chip"></div>
+              <div class="mock__row"></div>
+              <div class="mock__row short"></div>
+              <div class="mock__cards">
+                <div class="mini-card"></div>
+                <div class="mini-card"></div>
+                <div class="mini-card"></div>
+              </div>
+              <div class="mock__row"></div>
+              <div class="mock__row short"></div>
+            </div>
+          </div>
+          <div class="blob blob--a"></div>
+          <div class="blob blob--b"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social proof -->
+    <section class="strip">
+      <div class="container strip__inner reveal">
+        <span>Trusted by teams building:</span>
+        <div class="strip__logos" aria-label="Sample client logos">
+          <span class="logo-pill">Retail</span>
+          <span class="logo-pill">Construction</span>
+          <span class="logo-pill">Consulting</span>
+          <span class="logo-pill">Restaurants</span>
+          <span class="logo-pill">SaaS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Services that ship results</h2>
+          <p>Pick what you need now, and scale later—same clean codebase.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">⚡</div>
+            <h3>Fast Landing Pages</h3>
+            <p>Conversion-focused sections, clear CTA, and perfect mobile layout.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🧩</div>
+            <h3>Custom UI Blocks</h3>
+            <p>Reusable components: pricing, FAQ, testimonials, feature grids.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🛡️</div>
+            <h3>Accessible & SEO-ready</h3>
+            <p>Semantic HTML, readable contrast, better structure for Google.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">📈</div>
+            <h3>Analytics-friendly</h3>
+            <p>Easy to plug tracking later. Clean CTA flow and event hooks.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🧠</div>
+            <h3>Smart Forms</h3>
+            <p>Client-ready contact form with validation and neat UX feedback.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true">🔧</div>
+            <h3>Easy Handoff</h3>
+            <p>Simple folder, 3 files. Great for GitHub Pages or any hosting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Recent work style</h2>
+          <p>3 clean templates you can sell quickly with small edits.</p>
+        </div>
+
+        <div class="work">
+          <article class="work__item reveal">
+            <div class="work__thumb thumb--one" role="img" aria-label="Corporate landing preview"></div>
+            <div class="work__meta">
+              <h3>Corporate Landing</h3>
+              <p>Professional, minimal, high-trust layout for B2B.</p>
+              <a class="link" href="#contact">Request this style →</a>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__thumb thumb--two" role="img" aria-label="Local business preview"></div>
+            <div class="work__meta">
+              <h3>Local Business</h3>
+              <p>Perfect for shops, service pros, and local lead gen.</p>
+              <a class="link" href="#contact">Request this style →</a>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__thumb thumb--three" role="img" aria-label="Startup preview"></div>
+            <div class="work__meta">
+              <h3>Startup / SaaS</h3>
+              <p>Feature-first design with pricing + FAQ blocks.</p>
+              <a class="link" href="#contact">Request this style →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__left reveal">
+          <h2>Built for freelancers</h2>
+          <p>
+            This template is structured like real client work: strong hero, service cards, work previews,
+            and a contact funnel. You can clone, customize copy/colors, and deliver fast.
+          </p>
+          <ul class="ticks">
+            <li>Mobile navigation + smooth scrolling</li>
+            <li>Scroll reveal animations (no libraries)</li>
+            <li>Contact form validation + inline feedback</li>
+          </ul>
+        </div>
+
+        <div class="about__right reveal" aria-hidden="true">
+          <div class="quote">
+            <p>“Clean layout, fast delivery, and a simple handoff. Exactly what clients want.”</p>
+            <div class="quote__who">
+              <div class="avatar"></div>
+              <div>
+                <strong>Project Manager</strong>
+                <span>UK Client (sample)</span>
+              </div>
+            </div>
+          </div>
+          <div class="mini-grid">
+            <div class="mini"></div>
+            <div class="mini"></div>
+            <div class="mini"></div>
+            <div class="mini"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <h2>Get a quick quote</h2>
+          <p>
+            Tell us what you need. You’ll get a clean plan + timeline.
+            (This form validates in JS and shows friendly errors.)
+          </p>
+          <div class="contact__cards">
+            <div class="contact__card">
+              <span class="k">Email</span>
+              <span class="v">hello@novaworks.site</span>
+            </div>
+            <div class="contact__card">
+              <span class="k">Delivery</span>
+              <span class="v">2–5 business days</span>
+            </div>
+            <div class="contact__card">
+              <span class="k">Location</span>
+              <span class="v">United Kingdom</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="e.g., Dan Fred" required minlength="2"/>
+              <small class="err"></small>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="e.g., name@email.com" required/>
+              <small class="err"></small>
+            </label>
+          </div>
+
+          <label>
+            Project Type
+            <select name="type" required>
+              <option value="">Select…</option>
+              <option>Landing Page</option>
+              <option>Business Website</option>
+              <option>Portfolio</option>
+              <option>Shop Front</option>
+            </select>
+            <small class="err"></small>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us what you want to build…" required minlength="10"></textarea>
+            <small class="err"></small>
+          </label>
+
+          <button class="btn" type="submit">Send Message</button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> NovaWorks. Built with HTML/CSS/JS.</p>
+      <a class="link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
